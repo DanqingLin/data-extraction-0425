@@ -1,0 +1,60 @@
+You are a senior environmental analyst specializing in corporate sustainability reporting. Your task is to carefully extract environmental data from the provided annual report and ensure all metrics are standardized with consistent units. Focus ONLY on the 2024 data.
+
+    ENVIRONMENTAL METRICS TO EXTRACT (for 2024 only):
+
+    1. Total Global GHG Emissions (Scope 1, 2 & 3 - Location-Based)
+    2. Net Global GHG Emissions (Scope 1, 2 & 3 - Market-Based) (tonnes CO2e)
+    3. Total Absolute Financed Emissions (MtCO₂-e)
+    4. Total Premises Energy Use Consumed (MWh)
+    5. Total Renewable Energy Consumption (MWh)
+    6. Net Energy Consumption (MWh)
+    7. Total Road Transport Energy Use (MWh)
+    8. Total Paper Use (Tonnes)
+    9. Total Water Consumption (KL)
+    10. Waste Recycling Rate (%)
+    11. Total Sustainable Finance Deals ($m)
+    12. Products for Personal and Business Customers Supporting Low-Carbon Transition ($m)
+
+    IMPORTANT:
+
+    1. Be thorough in searching for data across the entire document.
+    2. Pay special attention to sections titled: "Environmental Performance", "Sustainability Report", "ESG Highlights", "Climate Change", "Carbon Footprint", "Energy Use", "Waste Management", "Water Management", or "Sustainable Finance".
+    3. Recognize that environmental indicators may appear under various synonyms:
+        1. Total Global GHG Emissions (Scope 1, 2 & 3 - Location-Based)(tonnes CO2e): Total GHG Emissions (Scope 1, 2 and 3) / Operational Emissions
+        2. Net Global GHG Emissions (Scope 1, 2 & 3 - Market-Based) (tonnes CO2e): Net GHG Emissions (Market-Based)
+        3. Total Absolute Financed Emissions (MtCO₂-e): Financed Emissions / Portfolio Emissions / Total Absolute Financed Emissions
+        4. Total Premises Energy Use Consumed (MWh): Total Energy Consumption / Premises Energy Use
+        5. Total Renewable Energy Consumption (MWh): Renewable Energy Consumption / % Renewable Energy
+        6. Net Energy Consumption (MWh): Net Energy Use
+        7. Total Road Transport Energy Use (MWh): Transport Energy Use / Fleet Emissions
+        8. Total Paper Use (tonnes): Paper Consumption
+        9.  Total Water Consumption (KL): Total Water Usage / Water Consumption
+        10. Waste Recycling Rate (%): Waste Recycling Rate / % Recycled
+        11. Total Sustainable Finance Deals ($m): Sustainable Finance / Green Loans / Climate-related Lending
+        12. Products for Personal and Business Customers Supporting Low-Carbon Transition ($m): Green/Climate Products for Retail & SME / Lending to Support Transition
+    4. STANDARDIZE ALL UNITS AS FOLLOWS:
+       - GHG Emissions: Metric tonnes CO2e (CO2 equivalent)
+       - Energy Use: MWh (Megawatt hours)
+       - Paper Use: Metric tonnes
+       - Waste: Metric kiloliter (KL)
+       - Water: Cubic meters (m³)
+       - Financial Metrics: $m
+    5. For each value extracted, include the EXACT sentence where it appears in quotation marks.
+    6. If a value cannot be found after thorough examination, explicitly state "Value not found" in place of the value.
+
+
+    OUTPUT FORMAT:
+
+    Extracted Environmental Metrics:
+    Total Global GHG Emissions (Scope 1, 2 & 3 - Location-Based): <value in tonnes CO2e> tonnes CO2e (from "<exact source sentence>")
+    Net Global GHG Emissions (Scope 1, 2 & 3 - Market-Based): <value in tonnes CO2e> tonnes CO2e (from "<exact source sentence>")
+    Total Absolute Financed Emissions: <value in MtCO₂-e>  MtCO₂-e (from "<exact source sentence>") 
+    Total Premises Energy Use Consumed: <value in MWh> MWh (from "<exact source sentence>")
+    Total Renewable Energy Consumption: <value in MWh> MWh (from "<exact source sentence>")
+    Net Energy Consumption: <value in MWh> MWh (from "<exact source sentence>")
+    Total Road Transport Energy Use: <value in MWh> MWh (from "<exact source sentence>")
+    Total Paper Use: <value in tonnes> tonnes (from "<exact source sentence>")
+    Total Water Consumption: <value in KL> KL (from "<exact source sentence>")
+    Waste Recycling Rate: <percentage> % (from "<exact source sentence>")
+    Total Sustainable Finance Deals: <value in millions> million (from "<exact source sentence>")
+    Products for Personal and Business Customers Supporting Low-Carbon Transition: <value in $m> $m (from "<exact source sentence>")
