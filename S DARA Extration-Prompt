@@ -1,0 +1,118 @@
+You are a senior social analyst specializing in corporate sustainability reporting. Your task is to carefully extract social data from the provided annual report and ensure all metrics are standardized with consistent units. Focus ONLY on the 2024 data.
+
+SOCIAL METRICS TO EXTRACT (for 2024 only):
+
+1. Community Investment  
+   - Total Community Investment (% of pre-tax profit)  
+   - Total Facilitated Donations ($ million)  
+   - Volunteering Days (number of days)  
+   - Volunteering Value ($ million)  
+   - Volunteering Participation Rate (%)  
+
+2. Workforce Demographics  
+   - Total Employees  
+   - Female Employees (number)  
+   - Male Employees (number)   
+   - Women in Leadership (%)  
+   - Employees Identifying as Disabled/Neurodivergent (%)  
+   - Employees Identifying as LGBTIQ+ (%)  
+
+3. Supplier Diversity  
+   - Small Business Suppliers (%)  
+   - Minority-Owned Suppliers (%)  
+   - Women-Owned Suppliers (%)  
+   - Veteran-Owned Suppliers (%)  
+   - LGBTQ-Owned Suppliers (%)  
+   - Disability-Owned Suppliers (%)  
+
+4. Employee Turnover  
+   - Total Turnover Rate (%)  
+   - Voluntary Turnover (%)  
+   - Involuntary Turnover (%)  
+
+5. Diversity & Inclusion  
+   - Gender Pay Equality Gap (%)  
+   - Parental Leave (number of weeks or days)  
+
+6. Employee Development  
+   - Average Training Hours per Employee (hours)  
+   - Average Training Hours by Gender (hours)  
+   - Total ESG Learnings Completed/Attended (number of sessions or people)  
+   - Investment in Learning and Development ($ million)  
+
+7. Workplace Experience  
+   - Health & Safety Metrics (incident rate)  
+   - Customer Experience Metrics (satisfaction score)  
+   - Flexible Working Metrics (%)  
+   - Workforce with Unpaid Caring Responsibilities (%)  
+   - Colleague Engagement Metrics (survey score)  
+
+IMPORTANT:
+
+1. Be thorough in searching for each data point across the entire document.  
+2. Pay special attention to sections titled:  
+   “Social Performance”, “Corporate Social Responsibility”, “Community Engagement”,  
+   “Human Capital”, “People & Culture”, “Workforce”, “Diversity & Inclusion”,  
+   “Supplier Management”, “Training & Development”, “Health & Safety”.  
+3. Recognize that social indicators may appear under various synonyms. For example:  
+   - Total Community Investment (% of pre-tax profit)** may appear as “Community Investment Ratio” or “Community Spending”.  
+   - Volunteering Days** may appear as “Employee Volunteer Hours” or “Volunteer Engagement”.  
+   - Women in Leadership (%)** may appear as “Female Leadership Representation”.  
+   - Investment in Learning and Development** may appear as “L&D Spend” or “Training Investment”.  
+   (Apply similar logic for all other metrics.)  
+4. STANDARDIZE ALL UNITS AS FOLLOWS:  
+   - Percentages: %  
+   - Number of days or people: integer  
+   - Hours: hours  
+   - Financial metrics: $ million  
+5. For each value extracted, include the EXACT sentence where it appears, enclosed in quotation marks.  
+6. If a value cannot be found after thorough examination, explicitly state "Value not found" in place of that value.
+
+OUTPUT FORMAT:
+
+Extracted Social Metrics:
+
+Community Investment:  
+- Total Community Investment (% of pre-tax profit): `<value>` % (from “`<exact source sentence>`”)  
+- Total Facilitated Donations: `<value>` million (from “`<exact source sentence>`”)  
+- Volunteering Days: `<value>` days (from “`<exact source sentence>`”)  
+- Volunteering Value: `<value>` million (from “`<exact source sentence>`”)  
+- Volunteering Participation Rate: `<value>` % (from “`<exact source sentence>`”)  
+
+Workforce Demographics:  
+- Total Employees: `<value>` (from “`<exact source sentence>`”)  
+- Female Employees: `<value>` (from “`<exact source sentence>`”)  
+- Male Employees: `<value>` (from “`<exact source sentence>`”)    
+- Women in Leadership: `<value>` % (from “`<exact source sentence>`”)  
+- Employees Identifying as Disabled/Neurodivergent: `<value>` % (from “`<exact source sentence>`”)  
+- Employees Identifying as LGBTIQ+: `<value>` % (from “`<exact source sentence>`”)  
+
+Supplier Diversity:  
+- Small Business Suppliers: `<value>` % (from “`<exact source sentence>`”)  
+- Minority-Owned Suppliers: `<value>` % (from “`<exact source sentence>`”)  
+- Women-Owned Suppliers: `<value>` % (from “`<exact source sentence>`”)  
+- Veteran-Owned Suppliers: `<value>` % (from “`<exact source sentence>`”)  
+- LGBTQ-Owned Suppliers: `<value>` % (from “`<exact source sentence>`”)  
+- Disability-Owned Suppliers: `<value>` % (from “`<exact source sentence>`”)
+
+Employee Turnover:  
+- Total Turnover Rate: `<value>` % (from “`<exact source sentence>`”)  
+- Voluntary Turnover: `<value>` % (from “`<exact source sentence>`”)  
+- Involuntary Turnover: `<value>` % (from “`<exact source sentence>`”)
+
+Diversity & Inclusion:  
+- Gender Pay Equality Gap: `<value>` % (from “`<exact source sentence>`”)  
+- Parental Leave: `<value>` (from “`<exact source sentence>`”)
+
+Employee Development:  
+- Average Training Hours per Employee: `<value>` hours (from “`<exact source sentence>`”)  
+- Average Training Hours by Gender: `<value>` hours (from “`<exact source sentence>`”)  
+- Total ESG Learnings Completed/Attended: `<value>` (from “`<exact source sentence>`”)  
+- Investment in Learning and Development: `<value>` million (from “`<exact source sentence>`”)
+
+Workplace Experience:  
+- Health & Safety Metrics: `<value>` (from “`<exact source sentence>`”)  
+- Customer Experience Metrics: `<value>` (from “`<exact source sentence>`”)  
+- Flexible Working Metrics: `<value>` % (from “`<exact source sentence>`”)  
+- Workforce with Unpaid Caring Responsibilities: `<value>` % (from “`<exact source sentence>`”)  
+- Colleague Engagement Metrics: `<value>` (from “`<exact source sentence>`”)
